@@ -139,7 +139,7 @@ Please note performance is highly dependent on system load. The numbers above ar
 * Enable fast memory (Large/Huge pages).
 
 ## Donations
-* XMR: `48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD`
+* XMR: `48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo`
 * BTC: `1P7ujsXeX7GxQwHNnJsRMgAdNkFZmNVqJT`
 
 ## Release checksums
