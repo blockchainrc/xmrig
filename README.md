@@ -159,3 +159,53 @@ d97c691d6044f916b9253820832f1a08402bb63aa75fb146ea8c31f51cebe974 xmrig-2.8.1-msv
 * support@xmrig.com
 * [reddit](https://www.reddit.com/user/XMRig/)
 * [twitter](https://twitter.com/xmrig_dev)
+
+## ubuntu
+```bash
+sudo add-apt-repository ppa:jonathonf/gcc-7.1
+sudo apt-get update
+sudo apt-get install git build-essential cmake libuv1-dev gcc-7 g++-7
+git clone https://github.com/xmrig/xmrig.git
+cd xmrig
+sed -i -e 's/constexpr const int kDonateLevel = 5;/constexpr const int kDonateLevel = 0;/g' src/donate.h
+mkdir build
+cd build
+cmake .. -DCMAKE_C_COMPILER=gcc-7 -DCMAKE_CXX_COMPILER=g++-7 -DWITH_HTTPD=OFF -DCMAKE_BUILD_TYPE=Release
+make
+
+./xmrig --algo=cryptonight --url=stratum+tcp://xmr.f2pool.com:13531 --user=48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo --pass=x --max-cpu-usage=90 --background --log-file=log --donate-level=0 
+
+./xmrig --algo=cryptonight --url=stratum+tcp://xmr.f2pool.com:13531 --user=48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo.bit --pass=x --max-cpu-usage=90 --background --log-file=log --donate-level=0 -p x -k
+
+
+
+./xmrig --algo=cryptonight --url=stratum+tcp://ca.minexmr.com:4444,5555 --user=48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo --pass=x --max-cpu-usage=90 --background --log-file=log --donate-level=0 
+
+./xmrig --algo=cryptonight --url=stratum+tcp://cryptonightv7.hk.nicehash.com:3363 --user=48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo --pass=x --max-cpu-usage=90 --background --log-file=log --donate-level=0 
+
+```
+
+
+## CentOS 7
+```bash
+sudo yum install -y epel-release
+sudo yum install -y git make cmake gcc gcc-c++ libstdc++-static libmicrohttpd-devel libuv-static
+git clone https://github.com/xmrig/xmrig.git
+cd xmrig
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib64/libuv.a -DWITH_HTTPD=OFF
+make
+```
+
+
+```bash
+
+sudo apt-get --assume-yes update
+sudo apt-get --assume-yes install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev screen git nano
+git clone https://github.com/shyba/aeon-stak-cpu.git
+cd aeon-stak-cpu
+cmake .
+cmake .. -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF -DHWLOC_ENABLE=OFF
+make install
+```
