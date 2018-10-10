@@ -209,3 +209,17 @@ cmake .
 cmake .. -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF -DHWLOC_ENABLE=OFF
 make install
 ```
+
+## MAC 
+```
+brew install cmake libuv libmicrohttpd
+git clone https://github.com/xmrig/xmrig.git
+cd xmrig
+mkdir build
+cd build
+cmake ..
+cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/local/opt/libuv/lib/libuv.a -DWITH_TLS=OFF
+make
+
+./xmrig --algo=cryptonight --url=stratum+tcp://xmr.f2pool.com:13531 --user=48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo.mac01 --pass=x --max-cpu-usage=100 --background --log-file=log --donate-level=0 -p x -k
+```
