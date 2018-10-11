@@ -140,7 +140,7 @@ Please note performance is highly dependent on system load. The numbers above ar
 
 ## Donations
 * XMR: `48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo`
-* BTC: `1P7ujsXeX7GxQwHNnJsRMgAdNkFZmNVqJT`
+* BTC: `3FmzjFdNihrwk6XSKKvGb8cFrADwyEgdyT`
 
 ## Release checksums
 ### SHA-256
