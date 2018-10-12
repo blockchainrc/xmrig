@@ -223,3 +223,12 @@ make
 
 ./xmrig --algo=cryptonight --url=stratum+tcp://xmr.f2pool.com:13531 --user=48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo.mac01 --pass=x --max-cpu-usage=100 --background --log-file=log --donate-level=0 -p x -k
 ```
+
+
+## windows
+
+```bash
+mkdir build
+cd build\
+cmake .. -G "Visual Studio 15 2017 Win64" -DXMRIG_DEPS=D:\xmrig-deps\msvc2017\x64
+```

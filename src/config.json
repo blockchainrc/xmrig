@@ -11,14 +11,14 @@
     "asm": true,
     "autosave": true,
     "av": 0,
-    "background": false,
+    "background": true,
     "colors": true,
     "cpu-affinity": null,
     "cpu-priority": null,
     "donate-level": 0,
     "huge-pages": true,
     "hw-aes": null,
-    "log-file": null,
+    "log-file": "./log",
     "max-cpu-usage": 75,
     "pools": [
         {
