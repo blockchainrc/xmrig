@@ -1,0 +1,64 @@
+{
+    "algo": "cryptonight",
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "id": null,
+        "worker-id": null,
+        "ipv6": false,
+        "restricted": true
+    },
+    "asm": true,
+    "autosave": true,
+    "av": 0,
+    "background": true,
+    "colors": true,
+    "cpu-affinity": null,
+    "cpu-priority": null,
+    "donate-level": 0,
+    "huge-pages": true,
+    "hw-aes": null,
+    "log-file": "./log",
+    "max-cpu-usage": 100,
+    "pools": [
+        {
+            "url": "xmr.f2pool.com:13531",
+            "user": "48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo.pc4",
+            "pass": "123",
+            "rig-id": null,
+            "nicehash": false,
+            "keepalive": false,
+            "variant": -1,
+            "tls": false,
+            "tls-fingerprint": null
+        }
+    ],
+    "print-time": 60,
+    "retries": 5,
+    "retry-pause": 5,
+    "safe": false,
+    "threads": [
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        }
+    ],
+    "user-agent": null,
+    "watch": false
+}
