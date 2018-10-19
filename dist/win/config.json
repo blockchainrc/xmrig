@@ -22,9 +22,9 @@
     "max-cpu-usage": 100,
     "pools": [
         {
-            "url": "xmr.f2pool.com:13531",
-            "user": "48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo.pc4",
-            "pass": "123",
+            "url": "pool.supportxmr.com:5555",
+            "user": "48zTan3DxeyLgEYE8Pz69CWjj4SqSGPUEPkoDt76Fih8C322mzoZQVy4HfaiTUxGuW98hzQ3jRtqM1SK52sZbNpDG3GWTuo.IdcPC",
+            "pass": "cpu",
             "rig-id": null,
             "nicehash": false,
             "keepalive": false,
